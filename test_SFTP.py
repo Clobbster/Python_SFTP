@@ -20,10 +20,10 @@ sftp = paramiko.SFTPClient.from_transport(transport)
 #sftp.get(filepath, localpath)
 
 ## Upload
-#filepath = '/home/foo.jpg'
-#localpath = '/home/pony.jpg'
-#sftp.put(localpath, filepath)
+local_filepath = ''
+remote_filepath = ''
+sftp.put(localpath, filepath)
 
 ## Close
-#sftp.close()
-#transport.close()
+sftp.close()
+transport.close()
