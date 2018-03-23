@@ -11,10 +11,10 @@ import getpass
 import paramiko
 import sys
 
-username = raw_input("Username: ")    #"crow"
-password = getpass.getpass("Password: ")    #"erdf34WESD@#"
-hostname = raw_input("Target_IP: ")   #"99.9.15.156"
-port = raw_input("Target_Port: ")     #22
+username = raw_input("Username: ")    
+password = getpass.getpass("Password: ")    
+hostname = raw_input("Target_IP: ")   
+port = raw_input("Target_Port: ")     
 
 client = paramiko.SSHClient()
 client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
