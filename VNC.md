@@ -1,11 +1,18 @@
 
-###For installing VNC###
+# For installing VNC
+
+```shell
 sudo apt-get install tightvncserver
+```
 
-###For Starting the VNCServer###
+## For Starting the VNCServer
+
+```shell
 vncserver :1 -geometry 1920x1080 -depth 24
+```
 
-###For port encapsulation###
+## For port encapsulation
+
 This encapsulates VNC traffic with SSH
 ```shell
 ssh -L 127.0.0.1:"random desired port":192.168.10.10:5901 "currentuser"@"ip"
